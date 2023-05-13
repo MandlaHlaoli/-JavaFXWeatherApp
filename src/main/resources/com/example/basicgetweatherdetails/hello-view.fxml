@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600" prefWidth="300.0" spacing="20.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.basicgetweatherdetails.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+
+  <Label fx:id="welcomeText" text="Enter City:" textFill="#2413a4" wrapText="true">
+      <font>
+         <Font name="Book Antiqua" size="24.0" />
+      </font></Label>
+  <VBox alignment="CENTER" spacing="10">
+
+      <TextField fx:id="cityInput" promptText="City Name" style="-fx-background-color: #FFFFFF; -fx-font-size: 14px; -fx-padding: 5px;" />
+
+
+      <Button onAction="#onHelloButtonClick" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px; -fx-padding: 10px 20px;" text="Submit" />
+
+  </VBox>
+   <ImageView fx:id="imageView" fitHeight="98.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" />
+    <Label fx:id="temperature" prefHeight="17.0" prefWidth="261.0" text="Temperature" textFill="#2413a4" wrapText="true">Your results will display here </Label>
+   <Label fx:id="humidity" prefHeight="17.0" prefWidth="254.0" text="Humidity" />
+   <Label fx:id="windpressure" prefHeight="17.0" prefWidth="338.0" text="Wind pressure" />
+
+
+</VBox>
